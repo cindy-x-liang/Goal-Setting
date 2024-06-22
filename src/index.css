@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  background-color:
+    #fafee3;
+  /* background: url('/Users/cindyliang/summer-24-proj/summer-24-app/client/images/p0.png'); */
+
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.goal-preview img {
+  width: 50px;
+
+
+}
+
+.navbar h1 {
+  color:
+    #556F44;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 1px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #556F44;
+}
+
+/* .navbar a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #333;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+} */
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.goal-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.goal-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.goal-preview h2 {
+  font-size: 20px;
+  color: #556F44;
+  margin-bottom: 8px;
+}
+
+.goal-preview a {
+  text-decoration: none;
+}
+
+/* blog details page */
+.goal-details h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.goal-details div {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.goal-details p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.goal-details form {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.goals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.goals-list img {
+  width: 150px;
+  align-items: center;
+}
+
+.goal-details button {
+  background: #556F44;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create input {
+
+  border-radius: 8px;
+
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  height: 30px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+  /* Align text vertically */
+  color: white;
+  transition: width 0.3s ease;
+}
+
+.create textarea {
+
+  border-radius: 8px;
+
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: #556F44;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background: #556F44;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.chat button {
+  background: #556F44;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.goal-details form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.goal-details label {
+  text-align: left;
+  display: block;
+}
+
+.goal-details h2 {
+  font-size: 20px;
+  color: #556F44;
+  margin-bottom: 30px;
+}
+
+.goal-details input,
+.goal-details textarea,
+.goal-details select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.goal-details button {
+  background: #556F44;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
