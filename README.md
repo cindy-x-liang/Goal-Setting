@@ -1,6 +1,7 @@
 # Goal Setting
 
-Link to video demo: [https://drive.google.com/file/d/1yLgCQ0hzMo9AKZ7iFjXzM8xKj4-Q94BW/view?usp=sharing](https://drive.google.com/file/d/1NFpbRgBTZlUrYESg84iD2_u5Nn64mzr1/view?usp=sharing)
+Link to video demo: [[https://drive.google.com/file/d/1yLgCQ0hzMo9AKZ7iFjXzM8xKj4-Q94BW/view?usp=sharing](https://drive.google.com/file/d/1NFpbRgBTZlUrYESg84iD2_u5Nn64mzr1/view?usp=sharing)
+](https://drive.google.com/file/d/1roUEpyGUsm-q4-lsXL7RsLcVsrhvVAPI/view?usp=sharing)
 
 Backend code is here: https://github.com/cindy-x-liang/Goal-Setting-Backend
 ## Home Page
