@@ -26,6 +26,11 @@ Allows users to chat with AI virtual assistant bot.
 <img width="953" alt="IMG_2563" src="https://github.com/cindy-x-liang/Goal-Setting-Frontend/assets/67083541/9ea02d63-b113-4677-887c-d7ff522cc2e2">
 
 
+# Instructions on how to run
+1. Clone the repository
+2. Clone the backend repository, make sure that is running first
+3. npm start in the terminal
+   
 The frontend was built using react. React specific README details are below. 
 
 
