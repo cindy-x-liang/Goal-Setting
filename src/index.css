@@ -119,6 +119,21 @@
   text-align: center;
 }
 
+.logs-list {
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.log-preview {
+  background: #fafee3;
+  color: black;
+  border: 0;
+
+
+}
+
+
 .goals-list img {
   width: 150px;
   align-items: center;
@@ -225,6 +240,8 @@
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  padding: 8px;
+  /* i just added this havent tested it yet*/
 }
 
 .goal-details label {

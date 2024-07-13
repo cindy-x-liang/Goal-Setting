@@ -34,7 +34,7 @@ import { useHistory } from 'react-router-dom';
 // };
 
 const GoalDetails = () => {
-  const [pro, setPro] = useState('');
+  // const [pro, setPro] = useState('');
   const history = useHistory();
 
 
@@ -56,6 +56,51 @@ const GoalDetails = () => {
   const { data: goal, error, isPending } = useFetch('/goals/' + id);
 
   const [progress, setProgress] = useState(0);
+
+  const [pro, setPro] = useState('');
+
+
+
+  const handleEvaluate = (e) => {
+    e.preventDefault();
+    console.log(id)
+    fetch('/progress/' + id)
+      .then(response => response.json())
+      .then(data => setPro(data.message));
+    // const { error, isPending, data: goals } = useFetch('/progress/' + title)
+    // setPro(goals);
+
+    // fetch('/goals/' + title, {
+    //   method: 'progress',
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(goal)
+    // }).then(() => {
+    //   console.log('new goal added');
+    // })
+  }
+
+  const handleDelete = (e) => {
+    e.preventDefault();
+    fetch('/goals/' + id, {
+      method: 'DELETE',
+      headers: { "Content-Type": "application/json" }
+    }).then(() => {
+      console.log('new goal added');
+      history.push('/');
+
+    })
+    // const { error, isPending, data: goals } = useFetch('/progress/' + title)
+    // setPro(goals);
+
+    // fetch('/goals/' + title, {
+    //   method: 'progress',
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(goal)
+    // }).then(() => {
+    //   console.log('new goal added');
+    // })
+  }
+
 
 
   // const handleProgressChange = (newProgress) => {
@@ -81,6 +126,17 @@ const GoalDetails = () => {
             ></input>
             <button>Add Progress</button>
           </form>
+
+          <form onSubmit={handleEvaluate}>
+            <button>Get evaluation</button>
+          </form>
+
+          <form onSubmit={handleDelete}>
+            <button>Delete Goal</button>
+          </form>
+
+
+          {pro && <p>The progress is: {pro}</p>}
 
 
           {/* <div>

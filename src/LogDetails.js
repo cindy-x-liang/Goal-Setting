@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useHistory } from 'react-router-dom';
+import useFetch from "./useFetch";
+import LogList from "./LogList";
 const LogDetails = () => {
   const [date, setTitle] = useState('');
   const [message, setCategory] = useState('');
@@ -20,9 +22,24 @@ const LogDetails = () => {
       .then(function (data) {
         console.log(data);
         setScore(data);
-        history.push('/');
+        window.location.reload();
       })
   }
+
+  const deleteTodo = (id) => {
+    fetch('/logs/' + id, {
+      method: 'DELETE',
+      headers: { "Content-Type": "application/json" }
+    }).then(() => {
+      console.log('new goal added');
+      window.location.reload();
+
+    })
+  };
+
+
+  const { error, isPending, data: logs } = useFetch('/logs')
+
 
   return (
     <div className="create">
@@ -45,6 +62,9 @@ const LogDetails = () => {
         <button>submit</button>
       </form>
 
+      {error && <div>{error}</div>}
+      {isPending && <div>Loading...</div>}
+      {logs && <LogList logs={logs} deletetodo={deleteTodo} />}
 
 
     </div>
